@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahdi inkwell — Stories Worth Reading</title>
+    <meta name="description"
+        content="Mahdi inkwell is a premium editorial destination for curious minds — technology, design, culture, travel, and ideas that matter." />
+    <link rel="stylesheet" href="blog.css">
+    <link rel="canonical" href="https://theinkwell.example.com/" />
+    <meta property="og:title" content="Mahdi inkwell — Stories Worth Reading" />
+    <meta property="og:description"
+        content="A premium editorial destination for curious minds — technology, design, culture, travel, and ideas that matter." />
+    <meta property="og:image" content="https://picsum.photos/1200/630?random=99" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://theinkwell.example.com/" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230d1b2a'/><text x='4' y='24' font-size='22' font-family='serif'>✒</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body>
+
+    <div id="cursor-trail"></div>
+
+    <div id="loader" role="status" aria-label="Loading Mahdi inkwell">
+        <div class="loader-logo">
+            <div class="loader-logo-icon">✒</div>
+            <div class="loader-logo-text">Mahdi <span>Inkwell</span></div>
+            <div class="loader-tagline">Stories Worth Reading</div>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-progress-bar"></div>
+        </div>
+    </div>
+
+    <header id="site-header">
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="#" class="nav-logo" data-page="home"><span class="nav-logo-icon">✒</span>Mahdi
+                <span>&nbsp;Inkwell</span></a>
+            <div class="nav-links" role="menubar">
+                <a href="#" role="menuitem" data-page="home" class="active">Home</a>
+                <a href="#" role="menuitem" data-page="articles">Articles</a>
+                <a href="#" role="menuitem" data-page="categories">Categories</a>
+                <a href="#" role="menuitem" data-page="about">About</a>
+                <a href="#" role="menuitem" data-page="contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Toggle dark/light mode"><i data-lucide="moon"
+                        width="18" height="18"></i></button>
+                <div class="hamburger-wrap">
+                    <button id="hamburger" class="btn-icon hamburger" aria-label="Open navigation menu"
+                        aria-expanded="false" aria-controls="mobile-menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu" role="menu" aria-label="Mobile navigation">
+            <a href="#" role="menuitem" data-page="home">Home</a>
+            <a href="#" role="menuitem" data-page="articles">Articles</a>
+            <a href="#" role="menuitem" data-page="categories">Categories</a>
+            <a href="#" role="menuitem" data-page="about">About</a>
+            <a href="#" role="menuitem" data-page="contact">Contact</a>
+        </div>
+    </header>
+
+    <main role="main" id="main-content">
+
+        <div id="page-home" class="page active">
+            <section class="hero" id="hero" aria-label="Featured article hero">
+                <canvas id="hero-canvas"></canvas>
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+                <div class="hero-grid"></div>
+                <div class="hero-vignette"></div>
+                <div class="hero-grain"></div>
+                <div class="hero-scanlines"></div>
+                <div class="corner-deco tl"><svg viewBox="0 0 60 60" fill="none">
+                        <path d="M2 58L2 2L58 2" stroke="rgba(245,158,11,0.5)" stroke-width="1.5" />
+                        <circle cx="2" cy="2" r="3" fill="rgba(245,158,11,0.6)" />
+                    </svg></div>
+                <div class="corner-deco tr"><svg viewBox="0 0 60 60" fill="none">
+                        <path d="M2 58L2 2L58 2" stroke="rgba(245,158,11,0.5)" stroke-width="1.5" />
+                        <circle cx="2" cy="2" r="3" fill="rgba(245,158,11,0.6)" />
+                    </svg></div>
+                <div class="corner-deco bl"><svg viewBox="0 0 60 60" fill="none">
+                        <path d="M2 58L2 2L58 2" stroke="rgba(245,158,11,0.5)" stroke-width="1.5" />
+                        <circle cx="2" cy="2" r="3" fill="rgba(245,158,11,0.6)" />
+                    </svg></div>
+                <div class="corner-deco br"><svg viewBox="0 0 60 60" fill="none">
+                        <path d="M2 58L2 2L58 2" stroke="rgba(245,158,11,0.5)" stroke-width="1.5" />
+                        <circle cx="2" cy="2" r="3" fill="rgba(245,158,11,0.6)" />
+                    </svg></div>
+                <span class="hero-side-text left">Vol. VII &nbsp;·&nbsp; Est. 2019 &nbsp;·&nbsp; London</span>
+                <span class="hero-side-text right">Stories Worth Reading &nbsp;·&nbsp; Mahdi inkwell</span>
+                <div class="hero-content" data-parallax="0.3">
+                    <div class="hero-eyebrow">
+                        <div class="eyebrow-dot"></div>Featured Story &nbsp;·&nbsp; March 2025
+                    </div>
+                    <h1 class="hero-headline" aria-label="The Quiet Revolution Reshaping How We Think">
+                        <span class="line"><span class="line-inner">The <em>Quiet Revolution</em></span></span>
+                        <span class="line"><span class="line-inner">Reshaping How We Think</span></span>
+                    </h1>
+                    <p class="hero-excerpt">Beneath the noise of breaking news, a deeper transformation is underway —
+                        one that questions everything we thought we knew about attention, creativity, and the machines
+                        we've invited into our lives.</p>
+                    <div class="hero-tags">
+                        <span class="htag active">Technology</span><span class="htag">Culture</span><span
+                            class="htag">Philosophy</span><span class="htag">8 min read</span>
+                    </div>
+                    <div class="hero-meta">
+                        <div class="hero-author-wrap">
+                            <div class="author-avatar"><img src="https://picsum.photos/80/80?random=1"
+                                    alt="Elena Marsh" /></div>
+                            <div>
+                                <div class="author-name">Elena Marsh</div>
+                                <div class="author-role">Editor-in-Chief</div>
+                            </div>
+                        </div>
+                        <div class="meta-sep"></div>
+                        <span class="meta-text">March 10, 2025</span>
+                        <div class="meta-sep"></div>
+                        <span class="meta-text">8 min read</span>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#" class="btn-cta" id="btn-main" data-page="articles">
+                            Read the Story
+                            <span class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg></span>
+                        </a>
+                        <a href="#" class="btn-ghost">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            Subscribe Free
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-chip"><span class="stat-chip-num">130+</span><span>Articles</span></div>
+                        <div class="stat-chip"><span class="stat-chip-num">48k</span><span>Readers</span></div>
+                        <div class="stat-chip"><span class="stat-chip-num">6</span><span>Categories</span></div>
+                        <div class="stat-chip"><span class="stat-chip-num">∞</span><span>Curiosity</span></div>
+                    </div>
+                </div>
+                <div class="hero-scroll-hint" aria-hidden="true">
+                    <div class="scroll-label">Scroll</div>
+                    <div class="scroll-track">
+                        <div class="scroll-thumb"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="categories-filter" data-aos="fade-up">
+                <div class="filter-scroll" role="group" aria-label="Filter articles by category">
+                    <button class="filter-chip active" data-category="all"><i data-lucide="layout-grid" width="14"
+                            height="14"></i> All</button>
+                    <button class="filter-chip" data-category="technology"><i data-lucide="cpu" width="14"
+                            height="14"></i> Technology</button>
+                    <button class="filter-chip" data-category="design"><i data-lucide="pen-tool" width="14"
+                            height="14"></i> Design</button>
+                    <button class="filter-chip" data-category="lifestyle"><i data-lucide="heart" width="14"
+                            height="14"></i> Lifestyle</button>
+                    <button class="filter-chip" data-category="travel"><i data-lucide="map-pin" width="14"
+                            height="14"></i> Travel</button>
+                    <button class="filter-chip" data-category="business"><i data-lucide="briefcase" width="14"
+                            height="14"></i> Business</button>
+                    <button class="filter-chip" data-category="science"><i data-lucide="flask-conical" width="14"
+                            height="14"></i> Science</button>
+                </div>
+            </div>
+
+            <section class="section" aria-labelledby="featured-title">
+                <div class="section-header">
+                    <div>
+                        <div class="section-label">Latest &amp; Greatest</div>
+                        <h2 class="section-title" id="featured-title">Featured Articles</h2>
+                    </div>
+                    <a href="#" class="section-link" data-page="articles">View All <i data-lucide="arrow-right"
+                            width="16" height="16"></i></a>
+                </div>
+                <div class="cards-grid" id="home-cards-grid">
+                    <article class="card" data-category="technology" data-aos="fade-up" data-aos-delay="0">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=20"
+                                alt="AI neural network visualization" loading="lazy" /></div>
+                        <div class="card-body">
+                            <span class="card-tag">Technology</span>
+                            <h3 class="card-title">Why the Next AI Breakthrough Won't Come From Silicon Valley</h3>
+                            <p class="card-excerpt">The frontier of artificial intelligence is shifting — toward smaller
+                                labs, open-source coalitions, and geographies that were once considered peripheral to
+                                the story.</p>
+                            <div class="card-footer">
+                                <div class="card-author-mini">
+                                    <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=2"
+                                            alt="James Cole" loading="lazy" /></div><span>James Cole · Mar 8</span>
+                                </div><span class="card-read-time">6 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card" data-category="design" data-aos="fade-up" data-aos-delay="80">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=30"
+                                alt="Minimalist design studio" loading="lazy" /></div>
+                        <div class="card-body">
+                            <span class="card-tag">Design</span>
+                            <h3 class="card-title">The Comeback of Maximalism: When More Became the Message</h3>
+                            <p class="card-excerpt">After a decade of stripping everything back, designers are embracing
+                                layered complexity, rich ornamentation, and bold contradiction as a form of visual
+                                truth-telling.</p>
+                            <div class="card-footer">
+                                <div class="card-author-mini">
+                                    <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=3"
+                                            alt="Sara Kim" loading="lazy" /></div><span>Sara Kim · Mar 6</span>
+                                </div><span class="card-read-time">5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card" data-category="lifestyle" data-aos="fade-up" data-aos-delay="160">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=40"
+                                alt="Person reading at a sunlit café" loading="lazy" /></div>
+                        <div class="card-body">
+                            <span class="card-tag">Lifestyle</span>
+                            <h3 class="card-title">Slow Reading in a Fast World: The Case for Deep Attention</h3>
+                            <p class="card-excerpt">In an era engineered for distraction, choosing to read slowly and
+                                deeply is a radical act — one with profound consequences for how we understand ourselves
+                                and the world.</p>
+                            <div class="card-footer">
+                                <div class="card-author-mini">
+                                    <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=4"
+                                            alt="Marcus Chen" loading="lazy" /></div><span>Marcus Chen · Mar 4</span>
+                                </div><span class="card-read-time">7 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card" data-category="travel" data-aos="fade-up" data-aos-delay="0">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=50"
+                                alt="Misty mountain landscape at dawn" loading="lazy" /></div>
+                        <div class="card-body">
+                            <span class="card-tag">Travel</span>
+                            <h3 class="card-title">The Places That Refuse to Be Discovered</h3>
+                            <p class="card-excerpt">Some destinations have learned to shield themselves from the
+                                traveler's gaze. What happens when an entire culture decides to opt out of the attention
+                                economy?</p>
+                            <div class="card-footer">
+                                <div class="card-author-mini">
+                                    <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=5"
+                                            alt="Leila Hassan" loading="lazy" /></div><span>Leila Hassan · Mar 2</span>
+                                </div><span class="card-read-time">9 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card" data-category="business" data-aos="fade-up" data-aos-delay="80">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=60"
+                                alt="Business team collaboration" loading="lazy" /></div>
+                        <div class="card-body">
+                            <span class="card-tag">Business</span>
+                            <h3 class="card-title">The Founder Who Refused to Scale (And Won Anyway)</h3>
+                            <p class="card-excerpt">Against every piece of conventional wisdom, a small cohort of
+                                entrepreneurs is building profitable, purposeful companies by staying deliberately
+                                small.</p>
+                            <div class="card-footer">
+                                <div class="card-author-mini">
+                                    <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=6"
+                                            alt="Ryan Osei" loading="lazy" /></div><span>Ryan Osei · Feb 28</span>
+                                </div><span class="card-read-time">11 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card" data-category="science" data-aos="fade-up" data-aos-delay="160">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=70"
+                                alt="Biological cell structures" loading="lazy" /></div>
+                        <div class="card-body">
+                            <span class="card-tag">Science</span>
+                            <h3 class="card-title">Memory Is Not a Recording — It's a Performance</h3>
+                            <p class="card-excerpt">Every time you remember something, you are not playing back a tape —
+                                you are reconstructing a story. New neuroscience is upending everything we thought we
+                                knew about the past.</p>
+                            <div class="card-footer">
+                                <div class="card-author-mini">
+                                    <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=7"
+                                            alt="Dr. Priya Nair" loading="lazy" /></div><span>Dr. Priya Nair · Feb
+                                        25</span>
+                                </div><span class="card-read-time">8 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="newsletter-section" aria-labelledby="newsletter-title">
+                <div class="newsletter-pattern" aria-hidden="true"></div>
+                <div class="newsletter-inner">
+                    <div class="newsletter-label" data-aos="fade-up">Join the Community</div>
+                    <h2 class="newsletter-title" id="newsletter-title" data-aos="fade-up" data-aos-delay="80">Stories
+                        That Linger<br />Delivered Weekly</h2>
+                    <p class="newsletter-sub" data-aos="fade-up" data-aos-delay="140">No noise. No spam. Just the three
+                        most thought-provoking reads of the week, curated with care.</p>
+                    <div class="newsletter-form" data-aos="fade-up" data-aos-delay="200">
+                        <input type="email" class="newsletter-input" id="newsletter-email" placeholder="your@email.com"
+                            aria-label="Your email address for newsletter" />
+                        <button class="btn-primary" id="newsletter-submit" type="button">Subscribe</button>
+                    </div>
+                    <div class="newsletter-success" id="newsletter-success" role="status" aria-live="polite">
+                        <i data-lucide="check-circle" width="18" height="18"></i>
+                        <span>You're in! Welcome to Mahdi inkwell community. ✦</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-articles" class="page">
+            <div class="page-hero-mini" data-aos="fade-up">
+                <div class="section-label">The Archive</div>
+                <h1>All Articles</h1>
+                <p>Every story we've ever told — sorted by curiosity, not the algorithm.</p>
+            </div>
+            <div class="content-layout">
+                <div>
+                    <div style="margin-bottom:var(--spacing-xl)">
+                        <div class="filter-scroll" role="group" aria-label="Filter articles by category">
+                            <button class="filter-chip active" data-category="all">All</button>
+                            <button class="filter-chip" data-category="technology">Technology</button>
+                            <button class="filter-chip" data-category="design">Design</button>
+                            <button class="filter-chip" data-category="lifestyle">Lifestyle</button>
+                            <button class="filter-chip" data-category="travel">Travel</button>
+                            <button class="filter-chip" data-category="business">Business</button>
+                            <button class="filter-chip" data-category="science">Science</button>
+                        </div>
+                    </div>
+                    <div class="cards-grid" id="articles-grid">
+                        <article class="card featured-big" data-category="technology" data-aos="fade-up">
+                            <div class="card-thumb"><img src="https://picsum.photos/700/420?random=80"
+                                    alt="Glowing circuits" loading="lazy" /></div>
+                            <div class="card-body">
+                                <span class="card-tag">Technology</span>
+                                <h2 class="card-title" style="font-size:clamp(1.2rem,2.5vw,1.6rem)">The Internet of
+                                    Feelings: Can Machines Learn Empathy?</h2>
+                                <p class="card-excerpt">Researchers at the intersection of affective computing and moral
+                                    philosophy are wrestling with a question that might define the next century: what do
+                                    we owe each other when some of "us" are not human at all?</p>
+                                <div class="card-footer">
+                                    <div class="card-author-mini">
+                                        <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=8"
+                                                alt="Wei Zhang" loading="lazy" /></div><span>Wei Zhang · Mar 12</span>
+                                    </div><span class="card-read-time">12 min read</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card" data-category="design" data-aos="fade-up" data-aos-delay="60">
+                            <div class="card-thumb"><img src="https://picsum.photos/600/375?random=31"
+                                    alt="Color palette swatches" loading="lazy" /></div>
+                            <div class="card-body">
+                                <span class="card-tag">Design</span>
+                                <h3 class="card-title">Color Is Never Just Color</h3>
+                                <p class="card-excerpt">How pigment, politics, and perception collide in every shade we
+                                    choose — and why the hues we call neutral rarely are.</p>
+                                <div class="card-footer">
+                                    <div class="card-author-mini">
+                                        <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=9"
+                                                alt="Nina Foster" loading="lazy" /></div><span>Nina Foster · Mar
+                                            9</span>
+                                    </div><span class="card-read-time">6 min read</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card" data-category="science" data-aos="fade-up" data-aos-delay="120">
+                            <div class="card-thumb"><img src="https://picsum.photos/600/375?random=71"
+                                    alt="Bioluminescent ocean waves" loading="lazy" /></div>
+                            <div class="card-body">
+                                <span class="card-tag">Science</span>
+                                <h3 class="card-title">The Ocean's Dark Internet</h3>
+                                <p class="card-excerpt">Miles beneath the surface, creatures communicate, hunt, and
+                                    survive using light, chemistry, and low-frequency sound — a hidden web of signals
+                                    science is only beginning to decode.</p>
+                                <div class="card-footer">
+                                    <div class="card-author-mini">
+                                        <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=10"
+                                                alt="Dr. Anu Teixeira" loading="lazy" /></div><span>Dr. Anu Teixeira ·
+                                            Mar 7</span>
+                                    </div><span class="card-read-time">9 min read</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card" data-category="business" data-aos="fade-up" data-aos-delay="0">
+                            <div class="card-thumb"><img src="https://picsum.photos/600/375?random=61"
+                                    alt="Team working in creative office" loading="lazy" /></div>
+                            <div class="card-body">
+                                <span class="card-tag">Business</span>
+                                <h3 class="card-title">Trust as Infrastructure: The Companies Building for Longevity
+                                </h3>
+                                <p class="card-excerpt">A new generation of businesses is betting that radical
+                                    transparency, fair pricing, and genuine ethics aren't just good PR — they're the
+                                    only sustainable strategy left.</p>
+                                <div class="card-footer">
+                                    <div class="card-author-mini">
+                                        <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=11"
+                                                alt="Aiko Mitsuru" loading="lazy" /></div><span>Aiko Mitsuru · Mar
+                                            5</span>
+                                    </div><span class="card-read-time">10 min read</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card" data-category="lifestyle" data-aos="fade-up" data-aos-delay="60">
+                            <div class="card-thumb"><img src="https://picsum.photos/600/375?random=41"
+                                    alt="Cozy kitchen scene" loading="lazy" /></div>
+                            <div class="card-body">
+                                <span class="card-tag">Lifestyle</span>
+                                <h3 class="card-title">The Art of Doing Nothing Badly</h3>
+                                <p class="card-excerpt">Rest, it turns out, is a skill — and most of us have forgotten
+                                    how to practice it. What would genuine leisure look like if we stopped optimising
+                                    it?</p>
+                                <div class="card-footer">
+                                    <div class="card-author-mini">
+                                        <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=12"
+                                                alt="Clem Rivers" loading="lazy" /></div><span>Clem Rivers · Mar
+                                            3</span>
+                                    </div><span class="card-read-time">5 min read</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card" data-category="travel" data-aos="fade-up" data-aos-delay="120">
+                            <div class="card-thumb"><img src="https://picsum.photos/600/375?random=51"
+                                    alt="Ancient winding alleyway" loading="lazy" /></div>
+                            <div class="card-body">
+                                <span class="card-tag">Travel</span>
+                                <h3 class="card-title">Getting Gloriously, Productively Lost</h3>
+                                <p class="card-excerpt">In an age of GPS and algorithmic recommendations, deliberately
+                                    choosing not to know where you are might be the most adventurous thing left to do.
+                                </p>
+                                <div class="card-footer">
+                                    <div class="card-author-mini">
+                                        <div class="avatar-xs"><img src="https://picsum.photos/40/40?random=13"
+                                                alt="Felix Okafor" loading="lazy" /></div><span>Felix Okafor · Feb
+                                            27</span>
+                                    </div><span class="card-read-time">7 min read</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <aside class="sidebar" aria-label="Trending posts and more">
+                    <div class="widget">
+                        <h2 class="widget-title"><i data-lucide="trending-up" width="18" height="18"></i> Trending Now
+                        </h2>
+                        <ol class="trending-list">
+                            <li class="trending-item"><span class="trending-num">01</span>
+                                <div class="trending-thumb"><img src="https://picsum.photos/120/90?random=21"
+                                        alt="AI article" loading="lazy" /></div>
+                                <div class="trending-info">
+                                    <div class="trending-title">Why the Next AI Breakthrough Won't Come From Silicon
+                                        Valley</div>
+                                    <div class="trending-views">24.3k views</div>
+                                </div>
+                            </li>
+                            <li class="trending-item"><span class="trending-num">02</span>
+                                <div class="trending-thumb"><img src="https://picsum.photos/120/90?random=32"
+                                        alt="Design article" loading="lazy" /></div>
+                                <div class="trending-info">
+                                    <div class="trending-title">The Comeback of Maximalism: When More Became the Message
+                                    </div>
+                                    <div class="trending-views">18.7k views</div>
+                                </div>
+                            </li>
+                            <li class="trending-item"><span class="trending-num">03</span>
+                                <div class="trending-thumb"><img src="https://picsum.photos/120/90?random=72"
+                                        alt="Science article" loading="lazy" /></div>
+                                <div class="trending-info">
+                                    <div class="trending-title">Memory Is Not a Recording — It's a Performance</div>
+                                    <div class="trending-views">15.1k views</div>
+                                </div>
+                            </li>
+                            <li class="trending-item"><span class="trending-num">04</span>
+                                <div class="trending-thumb"><img src="https://picsum.photos/120/90?random=52"
+                                        alt="Travel article" loading="lazy" /></div>
+                                <div class="trending-info">
+                                    <div class="trending-title">The Places That Refuse to Be Discovered</div>
+                                    <div class="trending-views">12.4k views</div>
+                                </div>
+                            </li>
+                            <li class="trending-item"><span class="trending-num">05</span>
+                                <div class="trending-thumb"><img src="https://picsum.photos/120/90?random=81"
+                                        alt="Feelings article" loading="lazy" /></div>
+                                <div class="trending-info">
+                                    <div class="trending-title">The Internet of Feelings: Can Machines Learn Empathy?
+                                    </div>
+                                    <div class="trending-views">10.8k views</div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="widget">
+                        <h2 class="widget-title"><i data-lucide="tag" width="18" height="18"></i> Browse Topics</h2>
+                        <div class="filter-scroll" style="flex-wrap:wrap;overflow-x:visible;">
+                            <button class="filter-chip" style="font-size:0.78rem">Technology</button>
+                            <button class="filter-chip" style="font-size:0.78rem">Design</button>
+                            <button class="filter-chip" style="font-size:0.78rem">Lifestyle</button>
+                            <button class="filter-chip" style="font-size:0.78rem">Travel</button>
+                            <button class="filter-chip" style="font-size:0.78rem">Business</button>
+                            <button class="filter-chip" style="font-size:0.78rem">Science</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <div id="page-categories" class="page">
+            <div class="page-hero-mini" data-aos="fade-up">
+                <div class="section-label">Explore</div>
+                <h1>Categories</h1>
+                <p>Six lenses on the world we live in — choose your obsession.</p>
+            </div>
+            <section class="section">
+                <div class="cards-grid">
+                    <article class="card" data-aos="fade-up" style="cursor:pointer" onclick="navigateTo('articles')">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=22" alt="Technology"
+                                loading="lazy" /></div>
+                        <div class="card-body"><span class="card-tag">Technology</span>
+                            <h2 class="card-title">Technology</h2>
+                            <p class="card-excerpt">AI, software, hardware, the web — how digital tools are reshaping
+                                every dimension of human life.</p>
+                            <div class="card-footer"><span style="font-size:0.82rem;color:var(--color-text-dim)">24
+                                    articles</span><span class="card-read-time">Explore →</span></div>
+                        </div>
+                    </article>
+                    <article class="card" data-aos="fade-up" data-aos-delay="60" style="cursor:pointer"
+                        onclick="navigateTo('articles')">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=33" alt="Design"
+                                loading="lazy" /></div>
+                        <div class="card-body"><span class="card-tag">Design</span>
+                            <h2 class="card-title">Design</h2>
+                            <p class="card-excerpt">Visual culture, UX, typography, fashion, architecture — beauty as a
+                                form of thinking.</p>
+                            <div class="card-footer"><span style="font-size:0.82rem;color:var(--color-text-dim)">18
+                                    articles</span><span class="card-read-time">Explore →</span></div>
+                        </div>
+                    </article>
+                    <article class="card" data-aos="fade-up" data-aos-delay="120" style="cursor:pointer"
+                        onclick="navigateTo('articles')">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=42" alt="Lifestyle"
+                                loading="lazy" /></div>
+                        <div class="card-body"><span class="card-tag">Lifestyle</span>
+                            <h2 class="card-title">Lifestyle</h2>
+                            <p class="card-excerpt">Health, habits, culture, and the rituals that make ordinary days
+                                feel like something worth living.</p>
+                            <div class="card-footer"><span style="font-size:0.82rem;color:var(--color-text-dim)">31
+                                    articles</span><span class="card-read-time">Explore →</span></div>
+                        </div>
+                    </article>
+                    <article class="card" data-aos="fade-up" style="cursor:pointer" onclick="navigateTo('articles')">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=53" alt="Travel"
+                                loading="lazy" /></div>
+                        <div class="card-body"><span class="card-tag">Travel</span>
+                            <h2 class="card-title">Travel</h2>
+                            <p class="card-excerpt">Stories from roads less taken, cities that surprise, and the art of
+                                moving through the world with wonder.</p>
+                            <div class="card-footer"><span style="font-size:0.82rem;color:var(--color-text-dim)">15
+                                    articles</span><span class="card-read-time">Explore →</span></div>
+                        </div>
+                    </article>
+                    <article class="card" data-aos="fade-up" data-aos-delay="60" style="cursor:pointer"
+                        onclick="navigateTo('articles')">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=62" alt="Business"
+                                loading="lazy" /></div>
+                        <div class="card-body"><span class="card-tag">Business</span>
+                            <h2 class="card-title">Business</h2>
+                            <p class="card-excerpt">Founders, finance, strategy, and the human stories inside the
+                                institutions that shape the economy.</p>
+                            <div class="card-footer"><span style="font-size:0.82rem;color:var(--color-text-dim)">20
+                                    articles</span><span class="card-read-time">Explore →</span></div>
+                        </div>
+                    </article>
+                    <article class="card" data-aos="fade-up" data-aos-delay="120" style="cursor:pointer"
+                        onclick="navigateTo('articles')">
+                        <div class="card-thumb"><img src="https://picsum.photos/600/375?random=73" alt="Science"
+                                loading="lazy" /></div>
+                        <div class="card-body"><span class="card-tag">Science</span>
+                            <h2 class="card-title">Science</h2>
+                            <p class="card-excerpt">Biology, physics, neuroscience, climate — the discoveries that are
+                                rewriting what we know about reality.</p>
+                            <div class="card-footer"><span style="font-size:0.82rem;color:var(--color-text-dim)">22
+                                    articles</span><span class="card-read-time">Explore →</span></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-about" class="page">
+            <section class="section">
+                <div class="about-grid">
+                    <div data-aos="fade-right">
+                        <div class="about-photo"><img
+                                src="https://images.unsplash.com/photo-1752650736242-d06f95024793?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Elena Marsh at her writing desk" loading="lazy" /></div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="100">
+                        <div class="about-label">The Mind Behind The Ink</div>
+                        <h1 class="about-name">Mahdi<br />Marsh</h1>
+                        <div class="divider"></div>
+                        <p class="about-bio">Mahdi Marsh is an award-winning journalist and essayist with over fifteen
+                            years of experience covering technology, culture, and the places where they collide. A
+                            former editor at <em>The Atlantic</em> and <em>Wired</em>, she founded Mahdi inkwell in 2019
+                            with one mission: to create a space for writing that takes its readers seriously.</p>
+                        <p class="about-bio">She believes great journalism doesn't shout — it illuminates. Each piece
+                            published here is chosen not for its virality, but for its capacity to leave you thinking
+                            differently about something you thought you already understood.</p>
+                        <div class="about-stats" data-aos="fade-up" data-aos-delay="160">
+                            <div class="stat-card">
+                                <div class="stat-num">130+</div>
+                                <div class="stat-label">Articles</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-num">48k</div>
+                                <div class="stat-label">Subscribers</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-num">15</div>
+                                <div class="stat-label">Years Writing</div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Follow Elena on Twitter"><i
+                                    data-lucide="twitter" width="18" height="18"></i></a>
+                            <a href="#" class="social-link" aria-label="Follow Elena on Instagram"><i
+                                    data-lucide="instagram" width="18" height="18"></i></a>
+                            <a href="#" class="social-link" aria-label="Connect on LinkedIn"><i data-lucide="linkedin"
+                                    width="18" height="18"></i></a>
+                            <a href="#" class="social-link" aria-label="RSS feed"><i data-lucide="rss" width="18"
+                                    height="18"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:var(--spacing-3xl)">
+                    <hr />
+                    <div style="text-align:center;padding:var(--spacing-2xl) 0" data-aos="fade-up">
+                        <div class="section-label">Stay Connected</div>
+                        <h2 class="section-title" style="margin-bottom:var(--spacing-md)">Never Miss a Story</h2>
+                        <p
+                            style="color:var(--color-text-muted);margin-bottom:var(--spacing-xl);max-width:440px;margin-inline:auto;line-height:1.7">
+                            Join 48,000 curious readers who get the best of Mahdi inkwell delivered every Sunday
+                            morning.
+                        </p>
+                        <div class="newsletter-form" style="max-width:420px;margin-inline:auto">
+                            <input type="email" class="newsletter-input"
+                                style="background:var(--color-surface);border-color:var(--color-border);color:var(--color-text)"
+                                placeholder="your@email.com" aria-label="Email for newsletter" />
+                            <button class="btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-contact" class="page">
+            <div class="page-hero-mini" data-aos="fade-up">
+                <div class="section-label">Get in Touch</div>
+                <h1>Contact Us</h1>
+                <p>Have a story tip, collaboration idea, or just want to say hello? We read everything.</p>
+            </div>
+            <section class="section">
+                <div class="contact-grid">
+                    <div class="contact-form-card" data-aos="fade-right">
+                        <h2
+                            style="font-family:var(--font-heading);font-size:1.5rem;font-weight:700;margin-bottom:var(--spacing-xl);color:var(--color-text)">
+                            Send a Message</h2>
+                        <div class="form-group"><label class="form-label" for="contact-name">Your Name</label><input
+                                type="text" id="contact-name" class="form-input" placeholder="Elena Marsh"
+                                autocomplete="name" /></div>
+                        <div class="form-group"><label class="form-label" for="contact-email">Email
+                                Address</label><input type="email" id="contact-email" class="form-input"
+                                placeholder="hello@example.com" autocomplete="email" /></div>
+                        <div class="form-group"><label class="form-label" for="contact-subject">Subject</label><input
+                                type="text" id="contact-subject" class="form-input"
+                                placeholder="Story pitch / Collaboration / Other" /></div>
+                        <div class="form-group"><label class="form-label" for="contact-msg">Message</label><textarea
+                                id="contact-msg" class="form-textarea"
+                                placeholder="Tell us what's on your mind…"></textarea></div>
+                        <button class="btn-primary" id="contact-submit" style="width:100%;justify-content:center">Send
+                            Message <i data-lucide="send" width="16" height="16"></i></button>
+                        <div id="contact-success" class="newsletter-success" style="margin-top:var(--spacing-md)"
+                            role="status" aria-live="polite"><i data-lucide="check-circle" width="18"
+                                height="18"></i><span>Message sent! We'll be in touch within 2 business days.</span>
+                        </div>
+                    </div>
+                    <div class="contact-info" data-aos="fade-left" data-aos-delay="80">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i data-lucide="mail" width="20" height="20"></i></div>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>muntazirmahdi.dev@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i data-lucide="map-pin" width="20" height="20"></i></div>
+                            <div>
+                                <h3>Our Studio</h3>
+                                <p>22 Aldgate, London, EC3A 1AB</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i data-lucide="clock" width="20" height="20"></i></div>
+                            <div>
+                                <h3>Response Time</h3>
+                                <p>We reply within 2 business days</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i data-lucide="feather" width="20" height="20"></i></div>
+                            <div>
+                                <h3>Story Pitches</h3>
+                                <p>muntazirmahdi.dev@gmail.com</p>
+                            </div>
+                        </div>
+                        <div
+                            style="padding:var(--spacing-lg);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md)">
+                            <h3
+                                style="font-family:var(--font-heading);font-size:1rem;font-weight:700;color:var(--color-text);margin-bottom:var(--spacing-sm)">
+                                Writers &amp; Contributors</h3>
+                            <p
+                                style="font-size:0.88rem;color:var(--color-text-muted);line-height:1.65;margin-bottom:var(--spacing-md)">
+                                We're always looking for voices that challenge, illuminate, and surprise. Send us a
+                                short pitch (3–5 sentences) and a link to a past piece you're proud of.</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter" width="16"
+                                        height="16"></i></a>
+                                <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram"
+                                        width="16" height="16"></i></a>
+                                <a href="#" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"
+                                        width="16" height="16"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="nav-logo"><span class="nav-logo-icon">✒</span>Mahdi <span>&nbsp;Inkwell</span></div>
+                <p class="footer-tagline">A home for writing that takes readers seriously — no noise, no algorithm, just
+                    stories worth your time.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter" width="16"
+                            height="16"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram" width="16"
+                            height="16"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin" width="16"
+                            height="16"></i></a>
+                    <a href="#" class="social-link" aria-label="RSS"><i data-lucide="rss" width="16"
+                            height="16"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#" data-page="home">Home</a></li>
+                    <li><a href="#" data-page="articles">Articles</a></li>
+                    <li><a href="#" data-page="categories">Categories</a></li>
+                    <li><a href="#" data-page="about">About</a></li>
+                    <li><a href="#" data-page="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Topics</h4>
+                <ul class="footer-links">
+                    <li><a href="#" data-page="categories">Technology</a></li>
+                    <li><a href="#" data-page="categories">Design</a></li>
+                    <li><a href="#" data-page="categories">Lifestyle</a></li>
+                    <li><a href="#" data-page="categories">Travel</a></li>
+                    <li><a href="#" data-page="categories">Business</a></li>
+                    <li><a href="#" data-page="categories">Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:hello@theinkwell.example.com">muntazirmahdi.dev@gmail.com</a></li>
+                    <li><a href="#">22 Aldgate, London</a></li>
+                    <li><a href="#">Write for Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2026 Mahdi inkwell. Crafted with care. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" class="social-link" style="width:36px;height:36px" aria-label="Twitter"><i
+                        data-lucide="twitter" width="15" height="15"></i></a>
+                <a href="#" class="social-link" style="width:36px;height:36px" aria-label="Instagram"><i
+                        data-lucide="instagram" width="15" height="15"></i></a>
+                <a href="#" class="social-link" style="width:36px;height:36px" aria-label="LinkedIn"><i
+                        data-lucide="linkedin" width="15" height="15"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-top" aria-label="Back to top" title="Back to top">
+        <i data-lucide="chevron-up" width="22" height="22"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="blog.js"></script>
+</body>
+
+</html>
